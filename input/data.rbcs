@@ -1,0 +1,40 @@
+# ===================
+# | RBCS parameters |
+# ===================
+
+# Relaxtion parameters
+ &RBCS_PARM01
+ useRBCtemp=.TRUE.,
+ tauRelaxT=6.0480e+05,
+ relaxTFile='sponge_temp8.bin',
+ relaxMaskFile='rbcs_mask_T.bin',
+ useRBCptracers=.TRUE.,
+ relaxMaskFile(3:8)='rbcs_mask_T.bin',
+ &
+
+# ptracer parameters
+ &RBCS_PARM02
+# tracer 1 - dic
+ useRBCptrnum(1)=.TRUE.,
+ tauRelaxPTR(1)=6.0480e+05,
+ relaxPtracerFile(1)='GLODAPsponge_dic.bin',
+# tracer 2 - alk
+ useRBCptrnum(2)=.TRUE.,
+ tauRelaxPTR(2)=6.0480e+05,
+ relaxPtracerFile(2)='GLODAPsponge_Alk.bin',
+# tracer 3 - po4 
+ useRBCptrnum(3)=.TRUE.,
+ tauRelaxPTR(3)=6.0480e+05,
+ relaxPtracerFile(3)='GLODAPsponge_po4.bin',
+# tracer 4 - dop 
+ useRBCptrnum(4)=.FALSE.,
+# tracer 5 - csat 
+ useRBCptrnum(5)=.TRUE.,
+ tauRelaxPTR(5)=6.0480e+05,
+ relaxPtracerFile(5)='sponge_dic.bin',
+# tracer 6 - csat fast
+ useRBCptrnum(6)=.TRUE.,
+ tauRelaxPTR(6)=6.0480e+05,
+ relaxPtracerFile(6)='sponge_dic.bin',
+ &
+

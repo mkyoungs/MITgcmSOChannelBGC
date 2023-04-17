@@ -1,0 +1,19 @@
+# DIC parameters 
+ &ABIOTIC_PARMS
+ &
+
+ &BIOTIC_PARMS
+# DOPfraction = 0.0,
+#  alphaUniform = 0.97e-10,
+#  rainRatioUniform = 5.e-2,
+#  KRemin = 0.95,
+ &
+
+ &DIC_FORCING
+#  DIC_iceFile='fice.bin',
+  DIC_forcingCycle=1.5768e+08,
+  DIC_forcingPeriod=3.1536e+07,
+  DIC_windFile='GasFluxWind15.bin',
+#  DIC_silicaFile='sillev1.bin',
+#  DIC_ironFile='mah_flux_smooth.bin',
+ &

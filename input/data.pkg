@@ -1,0 +1,12 @@
+# Packages
+ &PACKAGES
+ useDiagnostics=.TRUE.,
+ useRBCS=.TRUE.,
+ useOBCS=.FALSE., 
+ useKPP=.FALSE.,
+ useLayers=.TRUE.,
+ useBBL=.FALSE.,
+ usePtracers=.TRUE.,
+ useGCHEM = .TRUE.,
+# useDIC = .TRUE.,
+ /

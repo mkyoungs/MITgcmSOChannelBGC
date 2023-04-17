@@ -1,0 +1,39 @@
+# This set-up makes is supposed to immitate salt. That is, PTRACER(:,:,:,1) 
+# should look exactly like S(:,:,:).
+ &PTRACERS_PARM01
+ PTRACERS_numInUse=6,
+ PTRACERS_Iter0 = 0057290400, 
+# tracer 1 - dic
+ PTRACERS_names(1)='DIC',
+ PTRACERS_long_names(1)='Dissolved Inorganic Carbon (DIC) [mol C/m^3]',
+ PTRACERS_units(1)='mol/m^3',
+ PTRACERS_advScheme(1)=77,
+ PTRACERS_initialFile(1) ='GLODAPsponge_dic.bin',
+# tracer 2 - alk
+ PTRACERS_names(2)='Alk',
+ PTRACERS_long_names(2)='Alkalinity (Alk) [mol eq/m^3]',
+ PTRACERS_units(2)='mol/m^3',
+ PTRACERS_advScheme(2)=77,
+ PTRACERS_initialFile(2) ='GLODAPsponge_Alk.bin',
+# tracer 3 - po4
+ PTRACERS_names(3)='PO4',
+ PTRACERS_long_names(3)='Phosphate (PO4) [mol P/m^3]',
+ PTRACERS_units(3)='mol/m^3', 
+ PTRACERS_advScheme(3)=77,
+ PTRACERS_initialFile(3) ='GLODAPsponge_po4.bin',
+# tracer 4 - dop
+ PTRACERS_names(4)='DOP',
+ PTRACERS_long_names(4)='Dissolved Organic Phosphorus (DOP) [mol P/m^3]',
+ PTRACERS_units(4)='mol/m^3',
+ PTRACERS_advScheme(4)=77,
+ PTRACERS_initialFile(4) ='init_dop.bin',
+# tracer 5 - csat only
+ PTRACERS_advScheme(5)=77,
+ PTRACERS_initialFile(5) ='init_dic.bin',
+# tracer 6 - csat only fast
+ PTRACERS_advScheme(6)=77,
+ PTRACERS_initialFile(6) ='init_dic.bin',
+# PTRACERS_advScheme(3)=77,
+# PTRACERS_diffKh=1.E3,
+# PTRACERS_initialFile(3) ='hydrogThetaFile8.bin',
+ &
